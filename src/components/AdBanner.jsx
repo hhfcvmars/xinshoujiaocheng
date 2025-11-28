@@ -10,7 +10,7 @@ function AdBanner() {
       className="ad-banner"
     >
       <div
-        className="relative w-full overflow-hidden flex flex-col justify-center px-6 py-6 min-h-[160px]"
+        className="relative w-full overflow-hidden flex flex-col justify-center px-6 py-4 min-h-[120px]"
         style={{
           background: 'linear-gradient(135deg, #e8eeff 0%, #f0f4ff 30%, #eef2ff 60%, #e5eaff 100%)'
         }}
@@ -43,9 +43,9 @@ function AdBanner() {
             </div>
 
             {/* 醒目的免费体验文字 */}
-            <div className="mb-3 inline-block">
-              <div className="px-4 py-2 bg-gradient-to-r from-red-500 to-orange-500 rounded-lg shadow-lg animate-pulse">
-                <p className="text-white font-black text-2xl md:text-3xl tracking-wide">
+            <div className="mb-2 inline-block">
+              <div className="px-3 py-1.5 bg-gradient-to-r from-red-500 to-orange-500 rounded-lg shadow-lg animate-pulse">
+                <p className="text-white font-black text-xl md:text-2xl tracking-wide">
                   {adConfig.freeTrialText}
                 </p>
               </div>
@@ -53,13 +53,13 @@ function AdBanner() {
 
             {/* 文本内容 */}
             <div>
-              <h2 className="text-xl md:text-2xl font-bold tracking-tight">
+              <h2 className="text-lg md:text-xl font-bold tracking-tight">
                 <span className="text-slate-800">{adConfig.title}</span>
                 <span className="text-orange-500">{adConfig.highlight}</span>
               </h2>
-              <p className="text-slate-500 mt-1 text-sm">{adConfig.subtitle}</p>
+              <p className="text-slate-500 mt-0.5 text-xs">{adConfig.subtitle}</p>
 
-              <div className="mt-2 flex flex-wrap items-center gap-3">
+              <div className="mt-1.5 flex flex-wrap items-center gap-2">
                 <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-red-50 text-red-600 border border-red-100 shrink-0">
                   {adConfig.tag}
                 </span>
