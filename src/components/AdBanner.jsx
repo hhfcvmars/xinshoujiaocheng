@@ -42,6 +42,15 @@ function AdBanner() {
               <span className="text-blue-600 font-semibold text-sm">腾讯云</span>
             </div>
 
+            {/* 醒目的免费体验文字 */}
+            <div className="mb-3 inline-block">
+              <div className="px-4 py-2 bg-gradient-to-r from-red-500 to-orange-500 rounded-lg shadow-lg animate-pulse">
+                <p className="text-white font-black text-2xl md:text-3xl tracking-wide">
+                  {adConfig.freeTrialText}
+                </p>
+              </div>
+            </div>
+
             {/* 文本内容 */}
             <div>
               <h2 className="text-xl md:text-2xl font-bold tracking-tight">

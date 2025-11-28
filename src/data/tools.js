@@ -89,5 +89,6 @@ export const adConfig = {
   subtitle: '云服务器、数据库等多款产品特惠',
   buttonText: '立即选购',
   tag: '免费产品体验',
-  description: '60+款免费云产品，服务器最长体验1个月'
+  description: '60+款免费云产品，服务器最长体验1个月',
+  freeTrialText: '新人免费体验一个月'
 }
