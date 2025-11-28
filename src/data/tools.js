@@ -8,7 +8,7 @@ export const toolsData = {
     tools: [
       { name: 'ChatGPT', desc: 'OpenAI最强AI助手', icon: 'https://logo.clearbit.com/openai.com', gradient: 'linear-gradient(135deg, #10a37f, #0d8c6d)', url: 'https://chat.openai.com' },
       { name: 'Gemini', desc: 'Google最强多模态AI', icon: 'https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg', gradient: 'linear-gradient(135deg, #4285f4, #34a853)', url: 'https://gemini.google.com' },
-      { name: '通义千问', desc: '阿里超强AI模型', icon: '/icons/qianwen.jpeg', gradient: 'linear-gradient(135deg, #6039f5, #b399ff)', url: 'https://tongyi.aliyun.com' },
+      { name: '通义千问', desc: '阿里超强AI模型', icon: '/icons/qianwen.jpeg', gradient: 'linear-gradient(135deg, #6039f5, #b399ff)', url: 'https://www.qianwen.com' },
       { name: 'GitHub Copilot', desc: 'AI代码助手', icon: '/icons/github-copilot-1.png', gradient: 'linear-gradient(135deg, #000000, #434343)', url: 'https://github.com/features/copilot' },
       { name: 'Claude Code', desc: 'Anthropic编程助手', icon: '/icons/claude-code-2.png', gradient: 'linear-gradient(135deg, #da7b4f, #c85a32)', url: 'https://claude.ai' },
       { name: 'Cursor', desc: 'AI代码编辑器', icon: '/icons/cursor-3.png', gradient: 'linear-gradient(135deg, #1e3c72, #2a5298)', url: 'https://cursor.sh' },
