@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 隐藏滚动条 */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 动画延迟 */
+.animation-delay-100 { animation-delay: 0.1s; }
+.animation-delay-200 { animation-delay: 0.2s; }
+.animation-delay-300 { animation-delay: 0.3s; }
+.animation-delay-400 { animation-delay: 0.4s; }
+.animation-delay-500 { animation-delay: 0.5s; }
+
+/* 工具卡片 */
+.tool-card {
+  @apply bg-white border border-slate-200 rounded-xl p-4 flex flex-col items-start gap-3 transition-all duration-200 cursor-pointer;
+}
+
+.tool-card:hover {
+  @apply border-emerald-300 shadow-md -translate-y-0.5;
+}
+
+/* 导航项 */
+.nav-item {
+  @apply w-full flex items-center gap-3 px-4 py-3 text-left text-slate-500 rounded-r-lg transition-all duration-200 border-l-[3px] border-transparent;
+}
+
+.nav-item:hover {
+  @apply bg-slate-100 text-emerald-500;
+}
+
+.nav-item.active {
+  @apply text-emerald-500 font-medium border-l-emerald-500;
+  background: linear-gradient(90deg, rgba(16, 185, 129, 0.1) 0%, transparent 100%);
+}
+
+/* 广告Banner */
+.ad-banner {
+  @apply block rounded-xl overflow-hidden shadow-md transition-all duration-300;
+}
+
+.ad-banner:hover {
+  @apply shadow-xl;
+  transform: scale(1.002);
+}
+
+/* 查看更多链接 */
+.view-more {
+  @apply flex items-center gap-1 text-sm text-emerald-600 transition-all duration-200;
+}
+
+.view-more:hover {
+  @apply text-emerald-700;
+  gap: 8px;
+}
+
+/* 返回顶部按钮 */
+.scroll-top-btn {
+  @apply fixed bottom-8 right-8 w-12 h-12 bg-emerald-500 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-200;
+}
+
+.scroll-top-btn:hover {
+  @apply bg-emerald-600 -translate-y-0.5;
+}
