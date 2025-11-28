@@ -16,12 +16,28 @@ function HomePage() {
         const handleScroll = () => {
             setShowScrollTop(window.scrollY > 300)
 
+            // 检查是否接近页面底部
+            const scrollHeight = document.documentElement.scrollHeight
+            const scrollTop = window.scrollY
+            const clientHeight = window.innerHeight
+            const isNearBottom = scrollHeight - scrollTop - clientHeight < 100
+
             const sections = [{ id: 'articles' }, ...Object.values(toolsData)]
+
+            // 如果接近底部，激活最后一个区域
+            if (isNearBottom && sections.length > 0) {
+                const lastSection = sections[sections.length - 1]
+                setActiveSection(lastSection.id)
+                return
+            }
+
+            // 正常的滚动检测逻辑
             for (const section of sections) {
                 const element = document.getElementById(section.id)
                 if (element) {
                     const rect = element.getBoundingClientRect()
-                    if (rect.top <= 150 && rect.bottom >= 150) {
+                    // 调整检测阈值，使其更灵敏
+                    if (rect.top <= 200 && rect.bottom >= 100) {
                         setActiveSection(section.id)
                         break
                     }

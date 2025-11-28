@@ -48,53 +48,75 @@ function ArticlePage() {
     }
 
     return (
-        <div className="min-h-screen bg-slate-50 font-sans pb-20">
-            {/* Header */}
-            <header className="bg-white border-b border-gray-200 sticky top-0 z-30">
-                <div className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
+        <div className="min-h-screen bg-slate-50 font-sans">
+            {/* 顶部导航栏 - 固定在顶部 */}
+            <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
+                <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
                     <button
                         onClick={() => navigate('/')}
-                        className="flex items-center text-gray-600 hover:text-gray-900 transition-colors"
+                        className="group flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-all duration-300"
                     >
-                        <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                         </svg>
-                        返回首页
+                        <span className="font-medium">返回首页</span>
                     </button>
-                    <div className="text-sm text-gray-500">
+                    <div className="flex items-center gap-2 text-gray-500 text-sm">
+                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
                         {article.date}
                     </div>
                 </div>
             </header>
 
-            {/* Main Content */}
-            <main className="max-w-4xl mx-auto px-4 py-10">
-                {/* Article Header */}
-                <div className="mb-10 text-center">
-                    <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-                        {article.title}
-                    </h1>
-                    <div className="flex items-center justify-center gap-2 mb-8">
+            {/* 文章头部信息区 */}
+            <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-12">
+                <div className="max-w-4xl mx-auto px-6">
+                    {/* 标签 */}
+                    <div className="flex flex-wrap items-center gap-3 mb-6">
                         {article.tags.map(tag => (
-                            <span key={tag} className="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-sm font-medium">
+                            <span
+                                key={tag}
+                                className="px-4 py-1.5 bg-white/20 backdrop-blur-md text-white rounded-full text-sm font-medium border border-white/30 shadow-lg hover:bg-white/30 transition-colors"
+                            >
                                 {tag}
                             </span>
                         ))}
                     </div>
-                    <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden shadow-lg mb-10">
+
+                    {/* 标题 */}
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        {article.title}
+                    </h1>
+
+                    {/* 描述 */}
+                    <p className="text-lg md:text-xl text-white/90 max-w-3xl leading-relaxed">
+                        {article.description}
+                    </p>
+                </div>
+            </div>
+
+            {/* 文章配图区 */}
+            <div className="bg-gradient-to-b from-slate-900 to-slate-50 py-8">
+                <div className="max-w-5xl mx-auto px-6">
+                    <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-white p-4">
                         <img
                             src={article.image}
                             alt={article.title}
-                            className="w-full h-full object-cover"
+                            className="w-full h-auto rounded-xl"
                         />
                     </div>
                 </div>
+            </div>
 
-                {/* Article Body */}
-                <div className="bg-white rounded-2xl shadow-sm p-6 md:p-10">
+            {/* 主内容区 */}
+            <main className="max-w-4xl mx-auto px-6 py-12">
+                {/* 文章内容卡片 */}
+                <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                     {loading ? (
                         <div className="flex items-center justify-center h-64">
-                            <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin" />
+                            <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin" />
                         </div>
                     ) : (
                         <article className="prose prose-lg max-w-none prose-headings:text-gray-800 prose-p:text-gray-600 prose-a:text-blue-600 hover:prose-a:text-blue-700 prose-img:rounded-xl prose-img:shadow-lg prose-pre:bg-gray-900 prose-pre:shadow-lg">

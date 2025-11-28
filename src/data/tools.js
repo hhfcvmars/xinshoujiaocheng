@@ -72,6 +72,24 @@ export const toolsData = {
       { name: 'Framer AI', desc: 'AI网页设计', icon: '/icons/framer-ai-34.png', gradient: 'linear-gradient(135deg, #00c6ff, #0072ff)', url: 'https://framer.com' },
       { name: '即时设计AI', desc: '国产Figma替代', icon: '/icons/ai-35.png', gradient: 'linear-gradient(135deg, #f5af19, #f12711)', url: 'https://js.design' },
     ]
+  },
+  watermark: {
+    id: 'watermark-tools',
+    title: '去水印工具',
+    icon: '✨',
+    color: 'linear-gradient(135deg, #06b6d4, #22d3ee)',
+    tools: [
+      { name: 'Unwatermark AI', desc: 'AI智能去水印', icon: '/icons/unwatermark.png', gradient: 'linear-gradient(135deg, #667eea, #764ba2)', url: 'https://unwatermark.ai' },
+      { name: 'WatermarkRemover', desc: '免费在线去水印', icon: '/icons/watermarkremover.jpeg', gradient: 'linear-gradient(135deg, #f093fb, #f5576c)', url: 'https://watermarkremover.io' },
+      { name: 'Magic Eraser', desc: 'AI擦除水印工具', icon: '/icons/magiceraser.jpeg', gradient: 'linear-gradient(135deg, #4facfe, #00f2fe)', url: 'https://magiceraser.org' },
+      { name: '佐糖去水印', desc: 'AI图片水印去除', icon: 'https://logo.clearbit.com/picwish.cn', gradient: 'linear-gradient(135deg, #fa709a, #fee140)', url: 'https://picwish.cn/remove-watermark' },
+      { name: 'Inpaint', desc: '智能修复去水印', icon: 'https://logo.clearbit.com/theinpaint.com', gradient: 'linear-gradient(135deg, #30cfd0, #330867)', url: 'https://theinpaint.com' },
+      { name: 'Ezremove AI', desc: 'AI视频去水印', icon: '/icons/ezremove.png', gradient: 'linear-gradient(135deg, #a8edea, #fed6e3)', url: 'https://ezremove.ai' },
+      { name: '无痕AI', desc: '专业视频去水印', icon: '/icons/wuhenai.png', gradient: 'linear-gradient(135deg, #ff9a9e, #fecfef)', url: 'https://wuhenai.com' },
+      { name: 'Picsman AI', desc: '在线视频去水印', icon: 'https://logo.clearbit.com/picsman.ai', gradient: 'linear-gradient(135deg, #ffecd2, #fcb69f)', url: 'https://picsman.ai' },
+      { name: 'PhotoGrid', desc: 'AI去水印神器', icon: 'https://logo.clearbit.com/photogrid.app', gradient: 'linear-gradient(135deg, #ff6e7f, #bfe9ff)', url: 'https://photogrid.app' },
+      { name: 'Aiseesoft', desc: '免费水印移除器', icon: 'https://logo.clearbit.com/aiseesoft.com', gradient: 'linear-gradient(135deg, #e0c3fc, #8ec5fc)', url: 'https://aiseesoft.com' },
+    ]
   }
 }
 
@@ -82,6 +100,7 @@ export const navItems = [
   { id: 'image-tools', icon: '🖼️', label: 'AI图像工具' },
   { id: 'video-tools', icon: '🎬', label: 'AI视频工具' },
   { id: 'design-tools', icon: '🎨', label: 'AI设计工具' },
+  { id: 'watermark-tools', icon: '✨', label: '去水印工具' },
 ]
 
 // 广告配置
