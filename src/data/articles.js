@@ -7,5 +7,14 @@ export const articlesData = [
     contentPath: '/articles/ai-future.md',
     date: '2025-11-28',
     tags: ['AI编程', 'Copilot', '效率工具']
+  },
+  {
+    id: 'ai-react',
+    title: 'React 项目打包部署',
+    description: '怎么打包、部署React项目',
+    image: '/articles/images/ai-react.png',
+    contentPath: '/articles/ai-react.md',
+    date: '2025-11-28',
+    tags: ['AI编程', 'Copilot', '效率工具']
   }
 ]
