@@ -74,6 +74,7 @@ export const toolsData = {
 
 // 导航项配置
 export const navItems = [
+  { id: 'articles', icon: '📰', label: '精选文章' },
   { id: 'code-tools', icon: '💻', label: 'AI编程工具' },
   { id: 'image-tools', icon: '🖼️', label: 'AI图像工具' },
   { id: 'video-tools', icon: '🎬', label: 'AI视频工具' },
