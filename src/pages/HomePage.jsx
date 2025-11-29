@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Sidebar from '../components/Sidebar'
-import AdBanner from '../components/AdBanner'
 import ToolSection from '../components/ToolSection'
 import ArticleSection from '../components/ArticleSection'
 import ScrollToTop from '../components/ScrollToTop'
@@ -89,11 +88,6 @@ function HomePage() {
             {/* 主内容区 */}
             <main className="lg:ml-60 pt-20 lg:pt-0 px-5 lg:px-10 pb-10">
                 <div className="max-w-6xl mx-auto py-6 space-y-10">
-                    {/* 广告Banner */}
-                    <div className="opacity-0 animate-fade-in-up">
-                        <AdBanner />
-                    </div>
-
                     {/* 文章板块 */}
                     <ArticleSection />
 
