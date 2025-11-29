@@ -90,6 +90,44 @@ export const toolsData = {
       { name: 'PhotoGrid', desc: 'AI去水印神器', icon: 'https://logo.clearbit.com/photogrid.app', gradient: 'linear-gradient(135deg, #ff6e7f, #bfe9ff)', url: 'https://photogrid.app' },
       { name: 'Aiseesoft', desc: '免费水印移除器', icon: 'https://logo.clearbit.com/aiseesoft.com', gradient: 'linear-gradient(135deg, #e0c3fc, #8ec5fc)', url: 'https://aiseesoft.com' },
     ]
+  },
+  platform: {
+    id: 'platform-tools',
+    title: 'AI开发平台',
+    icon: '🏗️',
+    color: 'linear-gradient(135deg, #3b82f6, #60a5fa)',
+    tools: [
+      { name: 'BigModel', desc: 'GLM-4.6编程能力媲美Claude Sonnet 4，首购5折！', icon: '/icons/platform/bigmodel-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://bigmodel.cn' },
+      { name: '英博云AI算力', desc: '英博数科推出的GPU智算服务云平台', icon: '/icons/platform/yingboyun-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://yingboyun.com' },
+      { name: '讯飞星辰Agent', desc: 'AI智能体开发平台', icon: '/icons/platform/xunfeixingchenagent-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://xingchen.xfyun.cn' },
+      { name: '响指HaiSnap', desc: 'AI零代码应用开发平台，可视化编辑迭代', icon: '/icons/platform/haisnap-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://haisnap.com' },
+      { name: 'Zion', desc: '全栈开发AI Agent应用的无代码开发平台', icon: '/icons/platform/zion-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://functorz.com' },
+      { name: '阿里云百炼', desc: '一站式大模型开发与应用构建平台（免费领5.5折优惠券）', icon: '/icons/platform/bailian-aliyun-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://bailian.aliyun.com' },
+      { name: '码上飞', desc: '一句话生成微信小程序、APP、H5网页', icon: '/icons/platform/mashangfei-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://mashangfei.com' },
+      { name: 'Coze', desc: '海量AI智能体免费用，一键复制同款', icon: '/icons/platform/coze-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://www.coze.cn' },
+      { name: 'Google AI Studio', desc: '免费体验和测试 Google 最新的 AI 模型', icon: '/icons/platform/google-ai-studio-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://aistudio.google.com' },
+      { name: 'FastGPT', desc: '免费AI工作流搭建工具 自动化提高效率', icon: '/icons/platform/fastgpt-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://fastgpt.in' },
+      { name: 'n8n', desc: '开源的低代码AI工作流自动化工具', icon: '/icons/platform/n8n-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://n8n.io' },
+      { name: 'Dify', desc: '开源的生成式AI应用开发平台', icon: '/icons/platform/dify-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://dify.ai' },
+      { name: '快马InsCode', desc: '通过对话、设计图或文章链接生成工程项目代码', icon: '/icons/platform/kuaimainscode-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://inscode.net' },
+      { name: 'Trickle AI', desc: '一站式无代码 AI 开发平台', icon: '/icons/platform/trickle-ai-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://trickle.so' },
+      { name: 'Refly', desc: '全球首个开源 Vibe Workflow 平台', icon: '/icons/platform/refly-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://refly.ai' },
+      { name: 'NoCode', desc: '美团推出的零代码AI应用开发平台', icon: '/icons/platform/nocode-meituan-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://nocode.cn' },
+      { name: 'OpenRouter', desc: 'AI 模型 API 聚合平台，一个接口调用400多个模型', icon: '/icons/platform/openrouter-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://openrouter.ai' },
+      { name: 'SiliconFlow', desc: '生成式AI计算基础设施平台', icon: '/icons/platform/siliconflow-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://siliconflow.cn' },
+      { name: 'APIMart', desc: '一站式 AI API 平台，多主流模型统一访问', icon: '/icons/platform/apimart-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://apimart.xyz' },
+      { name: 'DMXAPI', desc: '一个Key用全球大模型', icon: '/icons/platform/dmxapi-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://dmxapi.com' },
+      { name: '小马算力', desc: 'AI模型API聚合平台，自由调用不同模型', icon: '/icons/platform/xiaomasuanli-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://xiaomasuanli.com' },
+      { name: '搭叩', desc: '心流AI旗下异步AI智能体开发平台', icon: '/icons/platform/dakou-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://dakou.ai' },
+      { name: 'BASE44', desc: '零代码AI应用开发平台', icon: '/icons/platform/base44-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://base44.com' },
+      { name: '秒哒', desc: '百度推出的无代码AI应用开发平台', icon: '/icons/platform/miaoda-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://miaoda.baidu.com' },
+      { name: 'CREAO', desc: '零代码AI应用开发平台，内置AI智能体', icon: '/icons/platform/creao-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://creao.ai' },
+      { name: 'Make', desc: 'AI零代码自动化工作流搭建平台', icon: '/icons/platform/make-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://www.make.com' },
+      { name: 'Wordware', desc: '零代码构建AI Agent和应用的开发平台', icon: '/icons/platform/wordware-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://wordware.ai' },
+      { name: 'PPIO派欧云', desc: 'AI云端一体化解决方案服务平台', icon: '/icons/platform/ppio-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://ppio.cn' },
+      { name: '蚂蚁百宝箱Tbox', desc: '让AI应用的创作像呼吸一样简单', icon: '/icons/platform/ant-tbox-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://tbox.cn' },
+      { name: 'WaveSpeedAI', desc: 'AI图像和AI视频生成加速服务平台', icon: '/icons/platform/wavespeedai-icon.png', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)', url: 'https://wavespeed.ai' },
+    ]
   }
 }
 
@@ -101,6 +139,7 @@ export const navItems = [
   { id: 'video-tools', icon: '🎬', label: 'AI视频工具' },
   { id: 'design-tools', icon: '🎨', label: 'AI设计工具' },
   { id: 'watermark-tools', icon: '✨', label: '去水印工具' },
+  { id: 'platform-tools', icon: '🏗️', label: 'AI开发平台' },
 ]
 
 // 广告配置
