@@ -70,50 +70,36 @@ function ArticlePage() {
                 </div>
             </header>
 
-            {/* 文章头部信息区 */}
-            <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-12">
-                <div className="max-w-4xl mx-auto px-6">
-                    {/* 标签 */}
-                    <div className="flex flex-wrap items-center gap-3 mb-6">
-                        {article.tags.map(tag => (
-                            <span
-                                key={tag}
-                                className="px-4 py-1.5 bg-white/20 backdrop-blur-md text-white rounded-full text-sm font-medium border border-white/30 shadow-lg hover:bg-white/30 transition-colors"
-                            >
-                                {tag}
-                            </span>
-                        ))}
-                    </div>
-
-                    {/* 标题 */}
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                        {article.title}
-                    </h1>
-
-                    {/* 描述 */}
-                    <p className="text-lg md:text-xl text-white/90 max-w-3xl leading-relaxed">
-                        {article.description}
-                    </p>
-                </div>
-            </div>
-
-            {/* 文章配图区 */}
-            <div className="bg-gradient-to-b from-slate-900 to-slate-50 py-8">
-                <div className="max-w-5xl mx-auto px-6">
-                    <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-white p-4">
-                        <img
-                            src={article.image}
-                            alt={article.title}
-                            className="w-full h-auto rounded-xl"
-                        />
-                    </div>
-                </div>
-            </div>
-
             {/* 主内容区 */}
-            <main className="max-w-4xl mx-auto px-6 py-12">
+            <main className="max-w-4xl mx-auto px-6 py-8">
                 {/* 文章内容卡片 */}
                 <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                    {/* 文章头部信息 */}
+                    <div className="mb-10 pb-8 border-b border-gray-100">
+                        {/* 标签 */}
+                        <div className="flex flex-wrap items-center gap-3 mb-6">
+                            {article.tags.map(tag => (
+                                <span
+                                    key={tag}
+                                    className="px-4 py-1.5 bg-blue-50 text-blue-600 rounded-full text-sm font-medium hover:bg-blue-100 transition-colors"
+                                >
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
+
+                        {/* 标题 */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                            {article.title}
+                        </h1>
+
+                        {/* 描述 */}
+                        <p className="text-lg text-gray-600 leading-relaxed">
+                            {article.description}
+                        </p>
+                    </div>
+
+                    {/* 文章正文 */}
                     {loading ? (
                         <div className="flex items-center justify-center h-64">
                             <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin" />
